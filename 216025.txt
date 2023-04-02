@@ -1,0 +1,41 @@
+Јаков Дамјански
+
+4. Со командата mkdir SI_2023_lab1_216025го креираме фолдерот , сo 
+cd SI_2023_lab1_216025 
+влегуваме во него и со git init го иницијализираме гит во самиот фолдер
+5.со командата git remote add origin https://github.com/JakovDamjanski/SI_2023_lab1_216025.git
+го поврзуваме со remote repo-то
+6.со командата touch README.md креираме празен фалј , со командата nano README.md го уредуваме.
+Откога ке ја смениме неговата содржина со git add го додаваме во staging area, а откога тоа ке го направиме
+со командата git commit -m "Initial commit" ги commitnuvame promenite so poraka Initial commit, истат може да ја видиме со командата git log
+7.touch SILab1.java, за да го додадеме фалјот nano SILab.java за да го уредиме 
+git add SILab1.java за да го додадеме на сцена, и со git commit -m "Add java class"
+8.Со командата git push -u origin master ги додаваме промените во оддалеченото репо.
+9.Со командите git branch bug1 , git branch bug2 , git branch bug3 ги креираме соодветните гранки.
+10.со командата git checkout bug1 се префрламе на гранката bug1
+11.со nano SILab1.java ја уредуваме датотеката и ги правиме потребните промени , додека со git commit -a -m "Fix wrong loop for reading" го креираме новиот комит (користејќи а ги додаваме сите трекнати фајлови каде што има промени(немора да го додаваме фалјот на сцена))
+12.git checkout bug2
+13.со nano SILab1.java ја уредуваме датотеката и ги правиме потребните промени , додека со git commit -a -m "Fix wrong condition in filterOddNUmbers" го креираме комитот
+14.git checkout bug3
+15.со nano SILab1.java ја уредуваме датотеката и ги правиме потребните промени , додека со git commit -a -m "Fix method sumEvenNumbers"го креираме комитот
+16.git push -u origin bug3
+git push origin bug2
+git push origin bug1
+за да ги синхронизираме сите гранки ги користиме горенаведените команди
+17.git checkout master за да се префрлиме на мастер(бидејќи кон нејзе треба да merge-неме).
+18.git merge bug1 (користиме fast-forward стратегија за merge,нема конфликти)
+19.git push origin master
+20.git merge bug1 (користиме recursive стратегија за merge,нема конфликти)
+21.git push origin master
+22.git checkout bug3
+23.git rebase master (Ги додава промените кои ги имаме во гранката bug3 веднаш по последниот комит на мастер)
+24.git checkout master
+25.git merge bug3 (fast forward merge strategy (нема конфликти))
+26.git push -f origin bug3
+git push origin master
+27.git logs - за да ги добиеме логовите кои треба да се ископираат
+touch logs.txt
+nano logs.txt - за да го креираме и уредиме фајлот
+git add logs.txt - за да го додадеме на сцена
+
+
